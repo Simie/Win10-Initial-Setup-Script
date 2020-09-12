@@ -14,7 +14,7 @@ Function EnableReconnectNetworkDrivesOnLogin {
 
     Copy-Item -Path "$PSScriptRoot/Scripts/MapDrives.ps1" -Destination "$scriptPath" -Force -Recurse
 
-    $argument = "-NoProfile -WindowStyle Hidden -command $scriptPath\MapDrives.ps1 >> %TEMP%\StartupLog.txt 2>&1"
+    $argument = "-NoProfile -WindowStyle Hidden -NoLogo -NonInteractive -ExecutionPolicy Bypass -command $scriptPath\MapDrives.ps1 >> %TEMP%\StartupLog.txt 2>&1"
 
 	$settings = New-ScheduledTaskSettingsSet -RunOnlyIfNetworkAvailable -StartWhenAvailable
 	$action = New-ScheduledTaskAction -Execute 'Powershell.exe' -Argument $argument

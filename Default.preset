@@ -208,8 +208,8 @@ Hide3DObjectsFromThisPC         # Show3DObjectsInThisPC
 DisableThumbsDBOnNetwork        # EnableThumbsDBOnNetwork
 
 ### Application Tweaks ###
-DisableOneDrive                 # EnableOneDrive
-UninstallOneDrive               # InstallOneDrive
+#DisableOneDrive                # EnableOneDrive
+#UninstallOneDrive              # InstallOneDrive
 UninstallMsftBloat              # InstallMsftBloat
 UninstallThirdPartyBloat        # InstallThirdPartyBloat
 # UninstallWindowsStore         # InstallWindowsStore
@@ -255,7 +255,7 @@ UninstallXPSPrinter             # InstallXPSPrinter
 # UnpinStartMenuTiles
 # UnpinTaskbarIcons
 
-Enable-ReconnectNetworkDrivesAtLogin #Disable-ReconnectNetworkDrivesAtLogin
+EnableReconnectNetworkDrivesOnLogin #DisableReconnectNetworkDrivesAtLogin
 
 ### Auxiliary Functions ###
 WaitForKey
